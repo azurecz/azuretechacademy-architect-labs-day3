@@ -51,7 +51,17 @@ Select ideal Azure solution for each data source. Only use PaaS services to opti
 
 ## Scenario 3: Moving data
 
-TBD - identify when to use Data Box, Data Box Edge, Azure Files Sync, Data Factory, Stream Analytics export, Logic Apps etc.
+There are various data sources and locations:
+- On-premises FTP server with CSV files
+- On-premises SQL Server 2017 with order transactional data in multiple countries
+- Telemetry data from IoT sensors collected in IoT Hub
+- 3rd party SaaS solution with event data pushed as Kafka messages to endpoint of your choice
+
+Design following solutions:
+- Every week move files from FTP server to Azure SQL Database in Azure. To minimize cost and operational overhead use serverless platform (no VMs) and design secure way for communicating from on-premises environment to Azure SQL Database.
+- Every night after company stores close orchestrate movement of transactional data from all countries SQL Servers to centralize location in Azure as flat files fo further processing. After all files are gathered from all countries use single job to ingest all data into company data warehouse based on Azure Synapse Analytics.
+- Telemetry data needs to be analyzed in real time to identify anomalies and notify application systems. Also all RAW data needs to be stored in Azure Blob Storage for forensic audit purposes while aggregated data in database for reporting.
+- Find solution to efficiently and reliably receive Kafka messages and use some processing to convert message format, enrich with static data (numbered list, geo-tagging) and push to Event Hub for further aplication processing (consumer)
 
 ## Scenario 4: Designing structured data analysis solution
 
