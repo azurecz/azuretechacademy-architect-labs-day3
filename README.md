@@ -39,7 +39,15 @@ TBD - implement data security policies (encryption), data access policies (RBAC,
 
 ## Scenario 2: Selecting right storage for different needs and types of data
 
-TBD - identify when to use Blob storage, Data Lake, Cosmos DB, SQL, Event Hub, multi-region solutions, using read replicas etc.
+Company has a lot of different data sources and you need to find best storage option based on data types and needs for additional processing.
+
+Source data:
+- Traditional structured dataset with orders and payments with need for strong transaction consistency, thousands of transactions per day. System needs to be ready for future growth in both database size and number of concurrent users. Customer expects huge growth in future.
+- Various data files in different formats such as JSON, Excel, CSV, PDF and JPG with different types of information such as maintenance records, audit trails, logs, financial data, scans of invoices, user pictures and avatars. Due to security concerns access to different folders needs to be governed with access control rules.
+- JSON files and messages with unpredictable structure with need for indexed queries. Due to need for low latency data must be distributed across 3 different regions to optimize performance for both reads and writes.
+- Legal document store with ability to setup WORM (Write Once Read Many - also called immutable storage) for legal hold and lifecycle management to optimize costs of live data vs. archive.
+
+Select ideal Azure solution for each data source. Only use PaaS services to optimize operational costs.
 
 ## Scenario 3: Moving data
 
