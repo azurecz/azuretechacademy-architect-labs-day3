@@ -86,3 +86,7 @@ TBD - design custom ML models, model governance and DevOps, position cognitive s
 - https://www.linkedin.com/in/jjindrich
 - https://github.com/jjindrich
 - https://twitter.com/jjindrich_cz
+
+### Filip Slanicka - Specialist Data & AI
+- https://www.linkedin.com/in/slanicka/
+- https://twitter.com/slanicka
