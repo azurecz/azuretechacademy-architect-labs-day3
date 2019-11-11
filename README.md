@@ -65,7 +65,12 @@ Design following solutions:
 
 ## Scenario 4: Designing structured data analysis solution
 
-TBD - design data warehouse and PowerBI
+The company needs to create and maintain data warehouse solution for operational as well as historization purposes. The solution needs to be able to fulfil the following requirements:
+
+- the data is pulled every night from 3 transactional database systems DWH, the DWH solution needs to be more powerful for this load so the process does not last into next day business hours
+- for the solution must stay cost effective, so there should be 3 compute level tiers defined on DWH automatically changing according to business hours (8am, 6pm, 10pm for load)
+- for operational reporting requirements, every LOB has it's own requirements for data models (which take data from the DWH) these models are defined and automatically refreshed according to LOB business needs
+- interactive reports are delivered to the end users via mobile application (tablets, phones) as interactive dashboards (end user is notified when the report has been shared with them or it's data has been updated). 
 
 ## Scenario 5: Designing semi-structured and unstructured data analysis solution
 
