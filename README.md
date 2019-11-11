@@ -97,7 +97,7 @@ Customer wants to design text analylis usecase where the data is captured from t
 Assume you have e-commerce platform offering multiple product groups spanning from mobile phones, home electronics to workshop tools. Suggest the platform that enables data scientists and data engineers to achieve the following:
 
 - create recommendation engine machine learning models to be able to recommend customer next product according to their online web shop behaviour as well as previous orders (assume you have this data as an input)
-- be able to create models coded in Python with the option to chose from multiple compute options where your model could be trained
+- be able to create models coded in Python with the option to choose from multiple compute options where your model could be trained
 - evaluate multiple version of your machine learning models with assessing their quality and performance - the comparison could be done programatically or visually
 - the environment needs to support multiple data scientists to be working on the same project with version control included in the solution
 - have an option how move the "right" model into production so the current e-commerce platform is able to use it as the scoring function against new data coming in
