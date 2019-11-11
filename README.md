@@ -74,7 +74,12 @@ The company needs to create and maintain data warehouse solution for operational
 
 ## Scenario 5: Designing semi-structured and unstructured data analysis solution
 
-TBD - design Azure Data Bricks
+Customer wants to design text analylis usecase where the data is captured from the call center calls. You can assume call recordings are offered as audio files by agency. Suggest the solution how to:
+
+- exchange the audio files with external agency for further processing
+- convert the audio in to text - this text needs to be stored somewhere for further processing in desired language
+- analyze the text for sentiment as well as extract the key phrases from it & store it somewhere so you can analyze them
+- enable full text search within the text as well as through key phrases extracted in cost effective whilst performant mannner 
 
 ## Scenario 6: Designing Machine Learning and Cognitive Services
 
