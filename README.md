@@ -33,9 +33,20 @@ Timing:
 
 # Scenarios
 
-## Scenario 1: Practical implementation of governance with Blueprints, Azure Policies, RBAC and ARM
+## Scenario 1: Design governance solution for secure data in Azure for regulated industry customer
 
-TBD - implement data security policies (encryption), data access policies (RBAC, enforcing AAD authentication for data plane), secure network access to data and package everything as Azure Blueprint
+Customer in regulated industry need to store unstructured data in Blob storage and structured data in Azure SQL Database. You need to design solution that is compliant with their security needs.
+
+Here are security requirements:
+- Data in blob storage must be kept for 10 years with no possibility to modify or delete data
+- All communications (data in fly) must be encrypted
+- Team of data analytics professionals need to access Azure SQL database, but for security reasons make sure mutli-factor authentication is supported
+- All data (both blobs and SQL) need to be encrypted at rest with customer-managed keys
+- SQL database contains one highly sensitive column that needs to be protected by encryption in application so all data is stored already encrypted
+- Make sure Azure administrators do not accidentaly replicate data outside of EU
+- Design solution in a way, that Storage and SQL accept only communication from VMs in customer VNET
+- Make sure that security best practicieas are audited or enforced in automated way
+- All audit information needs to be directed to SIEM solution
 
 ## Scenario 2: Selecting right storage for different needs and types of data
 
