@@ -1,8 +1,6 @@
 # Azure Technical Academy - Architect day3:  Data architectures and security
 Third day is focusing on data architectures in Azure and data security.
 
-**For day3 come with access to your own Azure subscription as Owner**
-
 Azure Stencils
 * Go to Visio
 * Open shapes
