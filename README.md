@@ -22,15 +22,6 @@ Timing:
 - 50min design
 - 20min presentation and recommended solution
 
-# How to upload results of your work
-* Download and install storage explorer [here](https://azure.microsoft.com/en-us/features/storage-explorer/)
-* Open storage explorer and connect to storage (key will be active only for duration of our workshop)
-    * Click on electricity plug icon on left side and select Use a storage account name and key
-    * Use following Account Name: architects
-    * Use following Account Key: <- will be provided at training date ->
-    * Go to architects, Blob Containers, right-click and create container for your group
-    * Upload results of your work to container with prefix scenario1 etc.
-
 # Scenarios
 
 ## Scenario 1: Design governance solution for secure data in Azure for regulated industry customer
@@ -38,7 +29,6 @@ Timing:
 Customer in regulated industry need to store unstructured data in Blob storage and structured data in Azure SQL Database. You need to design solution that is compliant with their security needs.
 
 Here are security requirements:
-- Data in blob storage must be kept for 10 years with no possibility to modify or delete data
 - All communications (data in fly) must be encrypted
 - Team of data analytics professionals need to access Azure SQL database, but for security reasons make sure mutli-factor authentication is supported
 - All data (both blobs and SQL) need to be encrypted at rest with customer-managed keys
